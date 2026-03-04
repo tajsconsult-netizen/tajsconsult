@@ -1,30 +1,12 @@
-import { Zap, Shield, HeadphonesIcon, Award } from "lucide-react";
+import { Zap, Shield, HeadphonesIcon, Award, RefreshCw, UserCheck, TrendingUp } from "lucide-react";
 
 const reasons = [
-  {
-    icon: Zap,
-    title: "Fast Turnaround",
-    badge: "24-72 hrs",
-    desc: "Most projects delivered in 24-72 hours. Urgent fixes same day.",
-  },
-  {
-    icon: Shield,
-    title: "100% Money-Back Guarantee",
-    badge: "7-day guarantee",
-    desc: "Not satisfied? Full refund within 7 days. Zero risk.",
-  },
-  {
-    icon: HeadphonesIcon,
-    title: "Dedicated Support",
-    badge: "24/7",
-    desc: "Direct communication throughout the project. No middlemen.",
-  },
-  {
-    icon: Award,
-    title: "Expert-Level Quality",
-    badge: "Top 1%",
-    desc: "Certified Shopify partner delivering enterprise-grade solutions.",
-  },
+  { icon: Zap, title: "Fast Turnaround", badge: "24-72 hrs", desc: "Most projects delivered in 24-72 hours. Urgent fixes same day." },
+  { icon: Shield, title: "100% Money-Back Guarantee", badge: "7-day guarantee", desc: "Not satisfied? Full refund within 7 days. Zero risk." },
+  { icon: HeadphonesIcon, title: "24/7 Support", badge: "< 1 hr response", desc: "I respond within 1 hour during business hours. Always available on WhatsApp." },
+  { icon: RefreshCw, title: "Unlimited Revisions", badge: "Until perfect", desc: "I work until you're 100% happy. Your satisfaction is my priority." },
+  { icon: TrendingUp, title: "Results-Driven", badge: "98% success rate", desc: "I focus on ROI, not just deliverables. Your success is my success." },
+  { icon: UserCheck, title: "Personal Attention", badge: "1-on-1 service", desc: "Direct communication with me—no assistants, no outsourcing." },
 ];
 
 const WhyTrustSection = () => (
@@ -34,7 +16,7 @@ const WhyTrustSection = () => (
       <p className="text-muted-foreground">Here's what makes working with me different</p>
     </div>
 
-    <div className="grid sm:grid-cols-2 gap-5">
+    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
       {reasons.map((r) => (
         <div key={r.title} className="bg-card rounded-xl border border-border p-6 hover:border-primary/30 transition-colors">
           <div className="flex items-center gap-3 mb-3">

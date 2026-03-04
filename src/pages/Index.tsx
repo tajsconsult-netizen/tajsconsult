@@ -2,11 +2,16 @@ import Navbar from "@/components/Navbar";
 import StatsBanner from "@/components/StatsBanner";
 import ProfileSidebar from "@/components/ProfileSidebar";
 import AboutSection from "@/components/AboutSection";
-import TrustBadges from "@/components/TrustBadges";
+import ShopifyPartnerSection from "@/components/ShopifyPartnerSection";
+import TrustedBySection from "@/components/TrustedBySection";
 import ServicesSection from "@/components/ServicesSection";
 import WhyTrustSection from "@/components/WhyTrustSection";
+import PastProjectsSection from "@/components/PastProjectsSection";
+import InstagramSection from "@/components/InstagramSection";
+import SuccessStoriesSection from "@/components/SuccessStoriesSection";
+import ClientReviewsSection from "@/components/ClientReviewsSection";
 import FAQSection from "@/components/FAQSection";
-import ContactSection from "@/components/ContactSection";
+import ContactFormSection from "@/components/ContactFormSection";
 
 const Index = () => {
   return (
@@ -24,11 +29,16 @@ const Index = () => {
           {/* Main content */}
           <div className="flex-1 space-y-8">
             <AboutSection />
-            <TrustBadges />
+            <ShopifyPartnerSection />
+            <TrustedBySection />
             <ServicesSection />
             <WhyTrustSection />
+            <PastProjectsSection />
+            <InstagramSection />
+            <SuccessStoriesSection />
+            <ClientReviewsSection />
             <FAQSection />
-            <ContactSection />
+            <ContactFormSection />
           </div>
         </div>
       </main>
