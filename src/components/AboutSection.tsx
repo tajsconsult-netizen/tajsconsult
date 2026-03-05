@@ -15,7 +15,7 @@ const AboutSection = () => (
   <section id="about-me" className="bg-card rounded-xl border border-border p-6 md:p-8">
     <h2 className="font-display font-bold text-2xl text-foreground mb-4">About Me</h2>
     <p className="text-muted-foreground leading-relaxed mb-2">
-      Hi, I'm <span className="font-semibold text-foreground">Tajs Consult</span>, based in California, United States. I'm a passionate eCommerce brands transformer and results-driven digital marketing strategist as well as certified full-stack website developer.
+      Hi, I'm <span className="font-semibold text-foreground">Tajs Consult</span>, based in West Africa, Nigeria. I'm a passionate eCommerce brands transformer and results-driven digital marketing strategist as well as certified full-stack website developer.
     </p>
     <p className="text-muted-foreground leading-relaxed mb-6">
       I deliver full digital solutions made to create sales, increase ROI, and drive lasting growth for online firms. I have expertise in Email Marketing, Social Media Marketing, SEO, SEM, and Shopify Website Development.
