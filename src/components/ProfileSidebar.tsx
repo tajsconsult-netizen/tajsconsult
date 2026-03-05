@@ -61,7 +61,7 @@ const ProfileSidebar = () => (
     <div className="space-y-2.5 text-sm">
       <div className="flex items-start gap-2 text-muted-foreground">
         <MapPin size={14} className="mt-0.5 shrink-0" />
-        <span>Head Office: United States Branch Office: Netherlands</span>
+        <span>West Africa, Nigeria</span>
       </div>
       <div className="flex items-center gap-2 text-muted-foreground">
         <Globe size={14} className="shrink-0" />

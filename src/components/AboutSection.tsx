@@ -1,4 +1,4 @@
-import { Instagram, MessageCircle } from "lucide-react";
+import { Mail, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const skills = [
