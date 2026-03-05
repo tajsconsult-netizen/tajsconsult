@@ -33,7 +33,7 @@ const Navbar = () => {
             <button
               key={link.id}
               onClick={() => scrollTo(link.id)}
-              className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+              className="text-sm font-medium text-white/80 hover:text-white transition-colors"
             >
               {link.label}
             </button>
