@@ -13,8 +13,9 @@ const ContactFormSection = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Form submission would go here
-    window.open(`https://wa.me/message/ANVPLUVYIX2GH1?text=${encodeURIComponent(`Hi! I'm ${form.name}. ${form.details}`)}`, "_blank");
+    const subject = encodeURIComponent(`Project Inquiry: ${form.type || 'General'}`);
+    const body = encodeURIComponent(`Hi, I'm ${form.name}.\n\nEmail: ${form.email}\nProject Type: ${form.type}\nBudget: ${form.budget}\n\nDetails:\n${form.details}`);
+    window.open(`mailto:tajsconsult@gmail.com?subject=${subject}&body=${body}`, "_blank");
   };
 
   return (
