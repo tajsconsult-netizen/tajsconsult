@@ -84,7 +84,7 @@ const ContactFormSection = () => {
         <div className="flex flex-col sm:flex-row gap-3">
           <Button type="submit" className="flex-1 gap-2">Send Inquiry</Button>
           <Button asChild variant="outline" className="flex-1 gap-2">
-            <a href="https://wa.me/message/FC2KYVG4SEX3C1" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/message/ANVPLUVYIX2GH1" target="_blank" rel="noopener noreferrer">
               <MessageCircle size={16} /> WhatsApp Instead
             </a>
           </Button>

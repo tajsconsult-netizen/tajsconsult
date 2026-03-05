@@ -26,8 +26,10 @@ const AboutSection = () => (
       <Button variant="outline" className="flex-1 gap-2">
         <Instagram size={18} /> Instagram
       </Button>
-      <Button className="flex-1 gap-2 bg-primary text-primary-foreground hover:bg-primary/90">
-        <MessageCircle size={18} /> WhatsApp
+      <Button asChild className="flex-1 gap-2 bg-primary text-primary-foreground hover:bg-primary/90">
+        <a href="https://wa.me/message/ANVPLUVYIX2GH1" target="_blank" rel="noopener noreferrer">
+          <MessageCircle size={18} /> WhatsApp
+        </a>
       </Button>
     </div>
 
