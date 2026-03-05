@@ -23,8 +23,10 @@ const AboutSection = () => (
 
     {/* Social buttons */}
     <div className="flex gap-3 mb-8">
-      <Button variant="outline" className="flex-1 gap-2">
-        <Instagram size={18} /> Instagram
+      <Button asChild variant="outline" className="flex-1 gap-2">
+        <a href="mailto:tajsconsult@gmail.com">
+          <Mail size={18} /> Email
+        </a>
       </Button>
       <Button asChild className="flex-1 gap-2 bg-primary text-primary-foreground hover:bg-primary/90">
         <a href="https://wa.me/message/ANVPLUVYIX2GH1" target="_blank" rel="noopener noreferrer">
