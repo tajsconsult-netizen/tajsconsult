@@ -23,7 +23,7 @@ const ProfileSidebar = () => (
           <span className="text-primary-foreground text-[8px]">✓</span>
         </div>
       </div>
-      <h3 className="font-display font-bold text-lg text-foreground">Zetee Professional</h3>
+      <h3 className="font-display font-bold text-lg text-foreground">Tajs Consult</h3>
       <p className="text-sm text-muted-foreground">Shopify Expert & eCommerce Strategist</p>
 
       {/* Stars */}
