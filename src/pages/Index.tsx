@@ -45,7 +45,7 @@ const Index = () => {
 
       {/* Footer */}
       <footer className="border-t border-border py-6 text-center text-sm text-muted-foreground">
-        © 2024 Zetee Professional. All rights reserved.
+        © 2024 Tajs Consult. All rights reserved.
       </footer>
     </div>
   );

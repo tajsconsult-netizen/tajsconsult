@@ -16,7 +16,7 @@ const TrustedBySection = () => (
           key={l.name}
           src={l.url}
           alt={l.name}
-          className="h-6 md:h-8 opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0"
+          className="h-6 md:h-8 hover:opacity-80 transition-opacity"
           loading="lazy"
         />
       ))}
