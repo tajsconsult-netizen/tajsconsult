@@ -48,7 +48,7 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden bg-card border-b border-border px-4 py-4 space-y-3">
+        <div className="md:hidden bg-[#95bf47] border-b border-[#7ab03b] px-4 py-4 space-y-3">
           {navLinks.map((link) => (
             <button
               key={link.id}
