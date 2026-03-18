@@ -103,7 +103,9 @@ const ContactFormSection = () => {
           />
         </div>
         <div className="flex flex-col sm:flex-row gap-3">
-          <Button type="submit" className="flex-1 gap-2">Send Inquiry</Button>
+          <Button type="submit" className="flex-1 gap-2" disabled={loading || sent}>
+            {loading ? <><Loader2 size={16} className="animate-spin" /> Sending...</> : sent ? <><CheckCircle size={16} /> Sent!</> : "Send Inquiry"}
+          </Button>
           <Button asChild variant="outline" className="flex-1 gap-2">
             <a href="https://wa.me/message/ANVPLUVYIX2GH1" target="_blank" rel="noopener noreferrer">
               <MessageCircle size={16} /> WhatsApp Instead
