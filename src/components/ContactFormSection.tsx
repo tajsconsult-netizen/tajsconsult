@@ -1,6 +1,8 @@
 import { useState } from "react";
-import { MessageCircle } from "lucide-react";
+import { MessageCircle, Loader2, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { supabase } from "@/integrations/supabase/client";
+import { toast } from "@/hooks/use-toast";
 
 const projectTypes = [
   "Shopify Store Setup", "Store Redesign", "Bug Fixing",
@@ -10,12 +12,30 @@ const budgetRanges = ["Under $200", "$200 – $500", "$500 – $1,000", "$1,000 
 
 const ContactFormSection = () => {
   const [form, setForm] = useState({ name: "", email: "", type: "", budget: "", details: "" });
+  const [loading, setLoading] = useState(false);
+  const [sent, setSent] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const subject = encodeURIComponent(`Project Inquiry: ${form.type || 'General'}`);
-    const body = encodeURIComponent(`Hi, I'm ${form.name}.\n\nEmail: ${form.email}\nProject Type: ${form.type}\nBudget: ${form.budget}\n\nDetails:\n${form.details}`);
-    window.open(`mailto:tajsconsult@gmail.com?subject=${subject}&body=${body}`, "_blank");
+    setLoading(true);
+
+    try {
+      const { data, error } = await supabase.functions.invoke("send-inquiry", {
+        body: form,
+      });
+
+      if (error) throw error;
+
+      setSent(true);
+      setForm({ name: "", email: "", type: "", budget: "", details: "" });
+      toast({ title: "Inquiry sent!", description: "We'll get back to you soon." });
+      setTimeout(() => setSent(false), 5000);
+    } catch (err) {
+      console.error("Send error:", err);
+      toast({ title: "Failed to send", description: "Please try WhatsApp or email directly.", variant: "destructive" });
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -83,7 +103,9 @@ const ContactFormSection = () => {
           />
         </div>
         <div className="flex flex-col sm:flex-row gap-3">
-          <Button type="submit" className="flex-1 gap-2">Send Inquiry</Button>
+          <Button type="submit" className="flex-1 gap-2" disabled={loading || sent}>
+            {loading ? <><Loader2 size={16} className="animate-spin" /> Sending...</> : sent ? <><CheckCircle size={16} /> Sent!</> : "Send Inquiry"}
+          </Button>
           <Button asChild variant="outline" className="flex-1 gap-2">
             <a href="https://wa.me/message/ANVPLUVYIX2GH1" target="_blank" rel="noopener noreferrer">
               <MessageCircle size={16} /> WhatsApp Instead
