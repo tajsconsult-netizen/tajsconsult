@@ -7,7 +7,7 @@ import TrustedBySection from "@/components/TrustedBySection";
 import ServicesSection from "@/components/ServicesSection";
 import WhyTrustSection from "@/components/WhyTrustSection";
 import PastProjectsSection from "@/components/PastProjectsSection";
-import InstagramSection from "@/components/InstagramSection";
+
 import SuccessStoriesSection from "@/components/SuccessStoriesSection";
 import ClientReviewsSection from "@/components/ClientReviewsSection";
 import FAQSection from "@/components/FAQSection";
