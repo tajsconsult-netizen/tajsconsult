@@ -1,9 +1,9 @@
 import { Users, Clock, Star, TrendingUp } from "lucide-react";
 
 const stats = [
-  { icon: Users, value: "1273+", label: "Projects Completed" },
-  { icon: Clock, value: "5+", label: "Years Experience" },
-  { icon: Star, value: "376+", label: "Happy Clients" },
+  { icon: Users, value: "100+", label: "Projects Completed" },
+  { icon: Clock, value: "4+", label: "Years Experience" },
+  { icon: Star, value: "60+", label: "Happy Clients" },
   { icon: TrendingUp, value: "98%", label: "Success Rate" },
 ];
 

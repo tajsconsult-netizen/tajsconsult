@@ -44,10 +44,10 @@ const ProfileSidebar = () => (
     {/* Quick stats */}
     <div className="grid grid-cols-2 gap-3">
       {[
-        { icon: Briefcase, value: "1,500+", label: "Jobs completed" },
+        { icon: Briefcase, value: "100+", label: "Jobs completed" },
         { icon: Clock, value: "< 1hr", label: "Response time" },
         { icon: TrendingUp, value: "98%", label: "Success rate" },
-        { icon: Calendar, value: "2019", label: "Member since" },
+        { icon: Calendar, value: "2022", label: "Member since" },
       ].map((s) => (
         <div key={s.label} className="flex flex-col items-center p-2">
           <s.icon size={16} className="text-muted-foreground mb-1" />
@@ -69,7 +69,7 @@ const ProfileSidebar = () => (
       </div>
       <div className="flex items-center gap-2 text-muted-foreground">
         <Award size={14} className="shrink-0" />
-        <span>7+ years experience</span>
+        <span>4+ years experience</span>
       </div>
     </div>
 
