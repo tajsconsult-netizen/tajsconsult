@@ -7,7 +7,7 @@ import TrustedBySection from "@/components/TrustedBySection";
 import ServicesSection from "@/components/ServicesSection";
 import WhyTrustSection from "@/components/WhyTrustSection";
 import PastProjectsSection from "@/components/PastProjectsSection";
-
+import WorkResultsSection from "@/components/WorkResultsSection";
 import SuccessStoriesSection from "@/components/SuccessStoriesSection";
 import ClientReviewsSection from "@/components/ClientReviewsSection";
 import FAQSection from "@/components/FAQSection";
@@ -34,7 +34,7 @@ const Index = () => {
             <ServicesSection />
             <WhyTrustSection />
             <PastProjectsSection />
-            
+            <WorkResultsSection />
             <SuccessStoriesSection />
             <ClientReviewsSection />
             <FAQSection />
