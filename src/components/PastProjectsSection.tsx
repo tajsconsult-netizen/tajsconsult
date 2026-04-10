@@ -58,7 +58,7 @@ const projects: Record<string, { title: string; desc: string; client: string; da
 };
 
 const portfolioStats = [
-  { value: "1,250+", label: "Happy Clients" },
+  { value: "100+", label: "Happy Clients" },
   { value: "$8.5M+", label: "Revenue Generated" },
   { value: "5★", label: "Average Rating" },
   { value: "100%", label: "Success Rate" },
