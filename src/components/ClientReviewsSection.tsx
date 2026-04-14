@@ -156,7 +156,7 @@ const ClientReviewsSection = () => {
       {filtered.length > 3 && (
         <div className="text-center">
           <Button variant="outline" onClick={() => setShowAll(!showAll)}>
-            {showAll ? "Show Less" : `View More (${filtered.length - 3} remaining)`}
+            {showAll ? "Show Less" : "View More"}
           </Button>
         </div>
       )}
