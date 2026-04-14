@@ -7,8 +7,10 @@ import workResults3 from "@/assets/work-results-3.jpg";
 import workResults4 from "@/assets/work-results-4.jpg";
 import workResults5 from "@/assets/work-results-5.jpg";
 import workResults6 from "@/assets/work-results-6.jpg";
-import workVideo1 from "@/assets/work-results-video-1.mp4";
 import workVideo2 from "@/assets/work-results-video-2.mp4";
+import workVideo3 from "@/assets/work-results-video-3.mp4";
+import workVideo4 from "@/assets/work-results-video-4.mp4";
+import workVideo5 from "@/assets/work-results-video-5.mp4";
 
 const images = [
   { src: workResults1, alt: "Sales analytics dashboard showing $5,226 total sales" },
@@ -20,8 +22,10 @@ const images = [
 ];
 
 const videos = [
-  { src: workVideo1, title: "Client results walkthrough" },
   { src: workVideo2, title: "Store performance overview" },
+  { src: workVideo3, title: "Tajs Consult showcase" },
+  { src: workVideo4, title: "Welcome to the Streets Hats" },
+  { src: workVideo5, title: "Thrive Causemetics showcase" },
 ];
 
 const WorkResultsSection = () => {
@@ -83,7 +87,7 @@ const WorkResultsSection = () => {
       {allItems.length > 3 && (
         <div className="text-center mt-4">
           <Button variant="outline" onClick={() => setShowAll(!showAll)}>
-            {showAll ? "Show Less" : `View More (${allItems.length - 3} more)`}
+            {showAll ? "Show Less" : "View More"}
           </Button>
         </div>
       )}

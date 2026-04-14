@@ -246,7 +246,7 @@ const SuccessStoriesSection = () => {
 
       <div className="text-center">
         <Button variant="outline" onClick={() => setShowAll(!showAll)}>
-          {showAll ? "Show Less" : `View More (${stories.length - 3} more)`}
+          {showAll ? "Show Less" : "View More"}
         </Button>
       </div>
     </section>
